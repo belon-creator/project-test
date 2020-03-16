@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./index.js" />
     <title>Document</title>
   </head>
   <body>
@@ -55,11 +54,11 @@
         <a class="scroll"></a>
       </div>
     </header>
+    <script>
+      $(".menu-btn").on("click", function(e) {
+        e.preventDefault;
+        $(this).toggleClass("menu-btn__active");
+      });
+    </script>
   </body>
-  <script>
-    $(".menu-btn").on("click", function(e) {
-      e.preventDefault;
-      $(this).toggleClass("menu-btn_active");
-    });
-  </script>
 </html>
